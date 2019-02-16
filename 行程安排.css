@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+/*----------------------用于写行程安排--------------------------*/
+/*
+.log_main {
+    width: 1140px;
+    margin:auto;
+    color: #08A060;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: 微软雅黑,宋体,Tahoma,Arial;
+    line-height: 20px;
+    color: #fff;
+}
+
+
+
+.ul_section_left {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    vertical-align: top;
+    width: 90px;
+    text-align: right;
+}
+
+.month {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 14px;
+    width: 30px;
+    line-height: 24px;
+    padding-right: 10px;
+}
+
+.month_top {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    height: 24px;
+    width: 33px;
+}
+.date {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-family: 'Arial';
+	    font-size: 24px;
+    border: 2px solid #63ddfd;
+    color: #000000;
+    border-radius: 3px;
+}
+
+.usr_main_version {
+    position: relative;
+    top: -10px;
+    width: 200px;
+    height: 36px;
+    border: 1px solid #63ddfd;
+    color: #63ddfd;
+    text-align: center;
+    line-height: 36px;
+	    font-size: 18px;
+    border-radius: 3px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+.lm_h3 {
+    position: relative;
+    top: 16px;
+    height: 133px;
+    line-height: 60px;
+    margin: 25px 0 0 156px;
+    *margin: 25px 0 0 153px;
+    font-size: 24px;
+    color: #63ddfd;
+	background: url("browser/log/log_h2.png") no-repeat;
+    padding-left: 70px;
+}*/
+/*--------------------------放行程安排最上面的一张图--------------------------------*/
+.top-img{
+	background-image:url(%E5%9C%B0%E5%9B%BE%E7%9B%B8%E5%86%8C/map1.jpg);
+	/*background-attachment:fixed;*/
+	min-height:100%;
+	height:450px;
+	}
+/*---------------------------------------------------------------*/
+.blank{
+	width:100%;
+	height:100px;
+	background-color:hsla(0,100%,100%,1.00);
+	}

@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+body, html ,main{
+  /* important */
+
+  height: 100%;
+}
+/*-----------------------------下面是控制底面三张图的css----------------*/
+.main-content {
+  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.fixed-bg {
+  position: relative;
+  min-height: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -900;
+  background-attachment:fixed;
+}
+.fixed-bg.bg-1 {
+  background-image:url(%E5%9B%BE%E7%89%87/cologne-central-station-railway-station-train-163580.jpeg);
+}
+.fixed-bg.bg-2 {
+  background-image:url(%E5%9B%BE%E7%89%87/wKgB6lSwje-AXQtkABLBmrrCyrw42.jpg);
+}
+.fixed-bg.bg-3 {
+  background-image:url(%E5%9B%BE%E7%89%87/wKgB6lSwhdmAG46XABBd-plhgAs03.jpg);
+}
+
+/*---------------下面是控制浮在上面的两个模块的css--------------------*/
+.scrolling-bg {
+  position: relative;
+  padding: 4em 0;
+  line-height: 1.6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: -800;
+  height:350px;
+  
+}
+.scrolling-bg.color-1 {
+  background-color: #3d3536;
+  color: #a6989a;
+}
+.scrolling-bg.color-2 {
+  background-color: #99a478;
+  color: #3d3536;
+}
+.scrolling-bg.color-3 {
+  background-color: #b4d7a8;
+  color: #3d3536;
+}
+
+.container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+  align-content:center;
+}
+.container::after {
+
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+@media only screen and (min-width: 768px) {
+  .cd-scrolling-bg {
+    padding: 8em 0;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
+    font-weight: 300;
+  }
+}
+/*-------------------下面是应用于导航栏的css-----------------------------------*/
+.top {
+    width: 100%;
+	height:12%;
+    top: 0;
+    left: 0;
+    background-color: rgba(112,201,175,0.78);
+    position: fixed;
+    transition: all 0.2s ease-in;
+    z-index: 999;
+}
+.top-text {
+    width: 70%;
+    min-width: 600px;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+	z-index: 1000;
+}
+.top-text {
+    text-align: center;
+}
+.top-text h2 {
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "黑体";
+    float: left;
+    text-decoration: none;
+    color: #544;
+    width: 14.28%;
+    min-width: 80px;
+    transition: all 0.2s ease-in;
+}
+/*----------------------下面是应用于文字的css-----------------------------*/
+.fixed-bg h1, .fixed-bg h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 100px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+/*-------------------------补充的css-----------------------------*/
+.page_container{
+	height:500px;
+	}
